@@ -1,0 +1,25 @@
+{
+  "name": "solc-compiler-node",
+  "version": "0.0.1",
+  "description": "",
+  "main": "parseCompiler.js",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "solc": "^0.5.11"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && mocha --require ts-node/register tests/*.ts -t 300000",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.7.8",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.1",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
+  },
+  "author": "",
+  "license": "ISC"
+}
